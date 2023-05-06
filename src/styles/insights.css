@@ -1,0 +1,120 @@
+/* insights and thoughts container styles */
+.insigths-and-thoughts-container {
+    /* height: 1471.56px; */
+    padding: 1rem 0rem 6rem 4rem;
+    background: #baff3b;
+    margin-top: -5rem;
+  }
+  .insigths-and-thought-heading {
+    font-family: "Benz Grotesk";
+    font-weight: 850;
+    font-size: 55px;
+    line-height: 120px;
+    color: #000000;
+    padding-bottom: 0.5rem;
+    text-transform: uppercase;
+  }
+  .thoughts-details-span-p {
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 25px;
+    color: #000000;
+    width: 59%;
+    /* width: 43rem; */
+  }
+  .insights-downArrow-svg {
+    fill: transparent;
+    position: relative;
+    top: -0.5rem;
+  }
+  
+  span.thoughts-details-span:hover .insights-downArrow-svg {
+    fill: #000000;
+  }
+  .insights-downArrow-svg:hover {
+    fill: black;
+    transition: fill 0.3s;
+  }
+  
+  
+  span.thoughts-details-span {
+    display: flex;
+    align-items: center;
+    /* padding-top: 2rem;
+    padding-bottom: 2rem; */
+    padding: 2rem 0 2rem 0;
+    /* padding-top: 0; */
+    gap: 3rem;
+  }
+  .thought-details-border {
+    border-top: 3px solid;
+    width: 69%;
+    opacity: 0.3;
+    border: 1px solid #000000;
+  }
+@media screen and (min-width:768px) and (max-width:1220px) {
+    .insigths-and-thoughts-container{
+        padding: 1rem  0 4rem 3rem;
+    }
+    .thoughts-details-span-p{
+        font-size: 21px;
+    }
+    .insights-downArrow-svg{
+        width: 34px;
+    }
+    .insigths-and-thought-heading{
+        font-size: 50px;
+    }
+    .thought-details-border{
+        width: 78%;
+    }
+    span.thoughts-details-span{
+        gap: 5rem;
+    }
+}  
+@media screen and (min-width:280px) and (max-width:768px) {
+  .insigths-and-thought-heading{
+    font-size: 22px;
+    text-align: center;
+  }
+  span.thoughts-details-span{
+    padding: 1rem 0 1rem 0;
+
+    gap: 1rem;
+    align-items: initial;
+  }
+  .thoughts-details-span-p{
+    font-size: 14.5px;
+    width: 81%;
+  }
+  .insigths-and-thoughts-container {
+    padding: 1.5rem 0rem 5rem 1rem;
+}
+.insights-downArrow-svg{
+  width: 24px;
+  width: 24px;
+  padding-top: 1.4rem;
+}
+.thought-details-border {
+  width: 93%;
+}
+}
+
+
+@media screen and (min-width:1441px) {
+  .insigths-and-thoughts-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 0;
+  }
+
+span.thoughts-details-span{
+  justify-content: center;
+}
+.thought-details-border {
+  margin: 0 auto;
+}
+}

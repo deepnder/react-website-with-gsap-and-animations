@@ -1,0 +1,220 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Montserrat&family=Open+Sans:wght@300&family=Poppins:wght@200&display=swap");
+body {
+  background: #000000;
+}
+/* navbar styles */
+.page-navbar {
+  display: flex;
+  justify-content: center;
+  background: black;
+  padding: 1.5rem;
+  color: #baff3b;
+  font-family: Benz Grotesk;
+  font-size: 1.5rem;
+}
+.navbar-superminds-logo {
+  width: 52px;
+  height: 30px;
+}
+@font-face {
+  font-family: Benz Grotesk;
+  src: url(../fonts/BenzGroteskHeavy-z8Vo1.ttf);
+}
+@font-face {
+  font-family: Glancyr-Medium;
+  src: url(../fonts/Glancyr-Medium.otf);
+}
+@font-face {
+  font-family: Glancyr-Thin;
+  src: url(../fonts/Glancyr-Thin.otf);
+}
+/* hover on text container styles */
+
+.text-headings-1 {
+  font-family: "Benz Grotesk";
+  font-weight: 850;
+  font-size: 78px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.text-headings-1:hover{
+-webkit-text-stroke: 1px white;
+color: transparent;
+}
+.hover-on-text-headings {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding-top: 9.5rem;
+}
+.hoveredImage-1 {
+  width: 100%;
+  height: auto;
+  margin-top: -37rem;
+  z-index: -2;
+  position: absolute;
+  height: 39rem;
+}
+
+.magic-heading-svg {
+  width: 23px;
+  height: 25px;
+  position: relative;
+  left: 10px;
+  top: -3px;
+  fill: #baff3b;
+  transition: all 0.3s ease;
+}
+
+.magic-heading {
+  font-family: "Glancyr-Medium";
+  font-weight: 600;
+  font-size: 23px;
+  color: #ffffff;
+  padding-right: 1rem;
+  padding-top: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  padding-top: 4rem;
+  transition: all 0.3s ease;
+}
+.magic-heading:hover {
+  color: #baff3b;
+  fill: #000000;
+
+  transition: all 0.3s ease;
+}
+.magic-heading::after {
+  content: "";
+  position: absolute;
+  width: 20.3rem;
+  transform: scaleX(0);
+  height: 2px;
+  margin-top: 40px;
+  background-color: #ffffff;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+.magic-heading:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+.magic-heading:hover .magic-heading-svg {
+  stroke: #baff3b !important;
+  stroke-width: 1;
+  fill: transparent;
+  transition: all 0.4s ease;
+}
+
+.section-hover-headings {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap:7rem
+}
+
+.hoveredImage {
+  width: 100%;
+  height: auto;
+  visibility: hidden;
+}
+@media screen and (min-width:768px) and (max-width:1220px) {
+  .text-headings-1{
+    font-size: 51px;
+  }
+  .magic-heading{
+    font-size: 21px;
+  }
+  .magic-heading-svg{
+    width: 20px;
+  }
+  .magic-heading::after{
+    width: 18.3rem;
+  }
+  .hoveredImage-1{
+  height: 35rem;
+  margin-top: -33rem;
+}
+.section-hover-headings{
+  gap: 5rem;
+}
+}
+#hovered-image-container-mobile{
+  display: none;
+}
+
+@media screen and (min-width:280px) and (max-width:768px) {
+  .navbar-superminds-logo {
+    width: 82px;
+    height: 37px;
+}
+.magic-heading{
+  font-size: 19.7px;
+}
+.magic-heading::after{
+  width: 17.3rem;
+}
+.text-headings-1{
+  font-size: 48px;
+  margin-top: 0;
+    margin-bottom: 3rem;
+    text-align: center;
+    z-index: 1;
+}
+.hover-on-text-headings {
+  flex-direction: column;
+  padding-top: 0rem;
+  gap: 0;
+}
+.section-hover-on-text {
+  /* background: #242f2f; */
+  padding-top: 3rem;
+    padding-bottom: 4rem;
+}
+.section-hover-headings{
+  gap: 0;
+}
+#hovered-image-container-desktop{
+  display: none;
+}
+.hoveredImage-1 {
+  width: 100%;
+  height: auto;
+  margin-top: 0rem;
+  z-index: 0;
+  position: relative;
+  height: 115px;
+  /* visibility: hidden; */
+}
+.hovered-image-container {
+  /* position: absolute; */
+  /* top: 7rem; */
+  margin-top: -29rem;
+  /* opacity: 0.7; */
+  /* margin: 0 auto; */
+  padding: 0 1rem 0 1rem;
+  
+}
+#hovered-image-container-mobile{
+  display: block;
+}
+}
+.show-image{
+  opacity: 1;
+}
+.hide-image{
+  opacity: 0;
+}
+@media screen and (min-width:1441px) {
+  #hovered-image-container-desktop {
+    position: relative;
+    margin: 0 auto;
+    width: 76rem;
+}
+.hoveredImage-1{
+  width: 98%;
+}
+}

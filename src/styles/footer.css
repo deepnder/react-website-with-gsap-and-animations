@@ -1,0 +1,191 @@
+/* footer styles */
+.footer {
+    height: 418px;
+    background: #242424;
+  }
+  @font-face {
+    font-family: Benz Grotesk;
+    src: url(../fonts/BenzGroteskHeavy-z8Vo1.ttf);
+  }
+  .footer-superminds-logo {
+    color: #baff3b;
+    font-size: 2.7rem;
+    font-family: Benz Grotesk;
+  }
+  .footer-text-logo {
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    color: #ffffff;
+  }
+  
+  .footer-links-childs {
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    color: #ffffff;
+  }
+  .footer-links-mobile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+span.footer-social-links{
+  position: absolute;
+  right: 4rem;
+ }
+ .footer-text-logo{
+  position: absolute;
+  left: 4rem;
+ }
+  .footer-magical-button {
+    background: #baff3b;
+    border: 1px solid #baff3b;
+    border-radius: 2rem;
+    height: 45px;
+    width: 330px;
+    background-image: linear-gradient(to right, #242424 50%, #baff3b 50%);
+    background-size: 300% 100%;
+    background-position: 100%;
+    transition: all 1s ease-out;
+    border: none;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #000000;
+    gap: 1rem;
+    justify-content: center;
+    font-family: "Glancyr-Medium";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    padding-top: 7px;
+  }
+  .footer-magical-button:hover {
+    color: #baff3b;
+    background-position: 0%;
+    transition: all 1s ease-out;
+    border: 1px solid #baff3b;
+  }
+  .magic-svg {
+    margin-top: -6px;
+    width: 17px;
+  }
+  .footer-magical-button:hover .magic-svg {
+    fill: #baff3b;
+  }
+  .footer-magical-button:hover span {
+    display: none;
+  }
+  .footer-magical-button:hover::before {
+    content: "Let's build together";
+  }
+  
+  .footer-social-links-childs {
+    color: #a5a5a5;
+    font-size: 16px;
+  }
+  .footer-childs-first {
+    display: flex;
+    padding-top: 5rem;
+    justify-content: space-around;
+    /* align-items: center; */
+    margin-left: -10rem;
+  }
+  .footer-childs-second {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 10.5rem;
+  }
+  .footer-links {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+  }
+  span.footer-social-links {
+    display: flex;
+    gap: 10px;
+  }
+  #footer-fb,
+  #footer-linkedin,
+  #footer-twitter {
+    border-right: 1px solid #a5a5a5;
+    padding-right: 12px;
+  }
+
+  @media screen and (min-width:768px) and (max-width:1220px) {
+    .footer-links{
+        gap: 1.6rem;
+    }
+    .footer-childs-first{
+        margin-left: 0;
+    }
+    span.footer-social-links{
+      right: 2.5rem;
+     }
+     .footer-text-logo{
+      left: 2.5rem;
+     }
+  }
+  @media screen and (min-width:280px) and (max-width:768px) {
+     .footer-magical-button{
+      display: none;
+     }
+     .footer-superminds-logo {
+      margin-top: 0rem;
+      margin-left: 0rem;
+      font-size: 1rem;
+  }
+  span.footer-social-links{
+position: initial;
+gap: 21px;
+padding-bottom: 10px;
+   }
+   .footer-text-logo{
+    position: initial;}
+
+    .footer-childs-second {
+      flex-direction: column-reverse;
+      padding-top: 3.5rem;
+  }
+  .footer-links-mobile{
+    flex-direction: column;
+    gap: 3rem;
+  }
+  span.footer-links {
+    flex-direction: column;
+    gap: 1.8rem;
+}
+
+#footer-links-childs-3 {
+  margin-top: 0rem;
+}
+
+  }
+  @media screen and (min-width:1441px) {
+    .footer-childs-second {
+      justify-content: center;
+      gap: 10rem;
+  }
+  .footer-text-logo{
+    position: initial;
+  }
+  span.footer-social-links{
+    position: initial;
+  }
+  .footer-childs-first {
+    margin-left: -1rem;
+    align-items: center;
+    justify-content: center;
+    gap: 36rem;
+}
+.footer-links-mobile{
+  gap: 10rem;
+}
+
+  }

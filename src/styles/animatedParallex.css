@@ -1,0 +1,220 @@
+/* parallex container */
+
+.parallex-images {
+    width: 345px;
+    height: 345px;
+  }
+  .section-parallex {
+    padding: 8rem 0 10rem 0;
+  }
+  .parallex-image-label{
+font-family: 'Glancyr-Medium';
+font-weight: 500;
+font-size: 32px;
+text-transform: uppercase;
+color: #FFFFFF;
+  }
+  .animated-images-span{
+    text-align: center;
+  }
+  .section-parallex-headings {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 4rem 0 4rem;
+    margin-top: -2rem;
+    /* height: 100vh; */
+    /* position: relative; */
+  }
+
+  .section-parallex-counting {
+    font-family: "Glancyr-Thin";
+    font-weight: 100;
+    font-size: 20px;
+    line-height: 37px;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    border-radius: 12rem;
+    padding: 2.7rem;
+    height: 0.9rem;
+    width: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .section-parallex-p {
+    font-family: "Glancyr-Thin";
+    font-weight: 100;
+    font-size: 23px;
+    line-height: 45px;
+    letter-spacing: 0.375em;
+    text-transform: uppercase;
+    color: #ffffff;
+  }
+  
+  .parallex-animated-heading {
+    font-family: "Benz Grotesk";
+    font-weight: 850;
+    font-size: 180px;
+    left: 0;
+    margin-top: 5rem;
+    text-transform: uppercase;
+    color: #baff3b;
+    overflow-x: scroll;
+    /* animation: moveHeading 6s ease-in-out infinite; */
+    /* transition: all 3s linear; */
+    position: absolute;
+    /* z-index: -1; */
+  }
+  .parallex-animated-heading::-webkit-scrollbar {
+    display: none;
+  }
+  .section-parallex{
+    display: flex;
+    flex-direction: column;
+    overflow-y: hidden;
+    gap: 4rem;
+    overflow: hidden;
+  }
+  
+  .animated-images {
+    display: flex;
+    /* justify-content: center; */
+    /* animation: moveImages 7s ease-in-out infinite; */
+    transition: all 0.5s ease-in-out;
+    overflow-x: scroll;
+    /* margin-left: 4rem; */
+    gap: 14rem;
+    margin-top: 6rem;
+  }
+  .animated-images::-webkit-scrollbar{
+    display: none;
+  }
+ 
+  .animated-parallex-container::-webkit-scrollbar {
+    display: none;
+  }
+ 
+  .scroll-section-outer{
+    background:black;
+  }
+  .scroll-section-outer {
+    /* overflow: hidden; */
+  }
+  /* img.parallex-images {
+    width: 23rem;
+    height: 22rem;
+  } */
+  .scroll-section-inner {
+    width: 400vw;
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+      position: relative;
+      top: -8rem;
+  }
+  .scroll-section {
+    width: 29vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 14rem;
+    flex-direction: column;
+
+  }
+  @media screen and (min-width:768px) and (max-width:1220px) {
+    .parallex-animated-heading{
+        font-size: 110px;
+        margin-top: 5rem;
+    }
+    .parallex-images {
+        width: 311px;
+        height: 302px;
+    }
+    .animated-images{
+        gap: 12rem;
+        /* justify-content: initial; */
+    }
+  
+    .section-parallex {
+        padding: 5rem 0 7rem 0;
+    }
+    
+ 
+  }
+  @media screen and (min-width:280px) and (max-width:768px) {
+    .section-parallex {
+      padding: 0rem 0 5rem 0;
+      /* background: #5f5f53; */
+  }
+  .section-parallex-headings {
+    display: flex;
+    align-items: initial;
+    padding: 2rem;
+    flex-direction: column-reverse;
+}
+.section-parallex-p{
+  font-size: 14.5px;
+}
+.section-parallex-counting {
+  padding: 2rem;
+
+  }
+  .parallex-animated-heading{
+    display: none;
+  }
+  .parallex-images {
+    width: 214px;
+    height: 214px;
+}
+.animated-images{
+  margin-top: 1rem;
+}
+.parallex-image-label{
+  font-size: 14.5px;
+}
+.animated-images {
+  gap: 2rem;
+  margin-top: 1rem;
+  animation: none;
+  /* position: relative;
+  left: 2rem; */
+  padding-right: 3rem;
+  justify-content: initial;
+}
+
+.scroll-section {
+  margin-left: 5rem;
+  width: 51vw;
+}
+.section-parallex {
+  gap: 0rem;
+}
+.scroll-section-inner {
+  height: 80vh;
+}
+}
+@media screen and (min-width:480px) and (max-width:768px) {
+  .scroll-section {
+    margin-left: 5rem;
+    width: 40vw;
+  }
+  .scroll-section-inner {
+    width: 340vw;
+  }
+}
+
+@media screen and (min-width:1441px) {
+  .section-parallex{
+    display: flex;
+    flex-direction: column;
+    width: 80rem;
+    margin: 0 auto;
+  }
+  .animated-images{
+    margin-left: 0;
+  }
+
+}
+
+

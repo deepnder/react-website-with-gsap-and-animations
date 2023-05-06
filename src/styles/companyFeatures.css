@@ -1,0 +1,316 @@
+/* types of developments */
+.about-company-features {
+    padding: 10rem 4rem 4rem 4rem;
+  }
+  .services-description {
+    width: 200px;
+    height: 677px;
+    background: #baff3b;
+  }
+  
+  .services-spinner {
+    animation: logo-spin infinite 20s linear;
+    width: 7rem;
+  }
+  @keyframes logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  .services-magical-button {
+    background: #baff3b;
+    border: 1px solid #baff3b;
+    height: 45px;
+    width: 330px;
+    border-radius: 2rem;
+    font-family: "Glancyr-Medium";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #000000;
+    justify-content: center;
+    gap: 1rem;
+    padding-top: 7px;
+    background: linear-gradient(to right, black 50%, #baff3b 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: all 0.5s ease-out;
+  }
+  .services-magical-button:hover {
+    color: #baff3b;
+    background-position: 0%;
+    transition: all 0.5s ease-out;
+    border: 1px solid #baff3b;
+  }
+  .services-magical-button:hover .magic-svg {
+    fill: #baff3b;
+  }
+  .services-magical-button:hover span {
+    display: none;
+  }
+  .services-magical-button:hover::before {
+    content: "Let's build together";
+  }
+  .services-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5rem;
+    /* gap: 6rem; */
+  }
+  .features-types {
+    display: flex;
+    justify-content: space-between;
+  }
+  .services-heading-1 {
+    font-family: "Glancyr-Medium";
+    font-weight: 500;
+    font-size: 26px;
+    text-transform: uppercase;
+    color: #000000;
+    transform: rotate(-90deg);
+    margin-top: 16rem;
+    margin-bottom: 7rem;
+    width: 15rem;
+  }
+  p.services-heading-2 {
+    font-family: "Glancyr-Medium";
+    font-weight: 500;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #000000;
+  }
+  
+  .developement-next-prev-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 3rem;
+    margin-top: -7.4rem;
+    margin-left: 3rem;
+  }
+  .development-types-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .type-heading {
+    font-family: "Benz Grotesk";
+    font-weight: 850;
+    font-size: 54px;
+    /* line-height: 120px; */
+    margin-bottom: 0;
+    color: #baff3b;
+    /* display: none; */
+  }
+  
+  .type-description {
+    width: 947.47px;
+    height: 93px;
+    font-family: "Glancyr-Thin";
+    font-weight: 100;
+    font-size: 20px;
+    letter-spacing: 0.05em;
+    color: #ffffff;
+    opacity: 0.7;
+    text-align: center;
+    width: 67%;
+    padding-bottom: 3rem;
+    /* display: none; */
+  }
+  @font-face {
+    font-family: Glancyr-Light;
+    src: url(../fonts/Glancyr-Light.otf);
+  }
+  .next-prev-heading {
+    font-family: Glancyr-Light;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    width: 0rem;
+    line-height: 25px;
+    letter-spacing: 0.19em;
+    text-transform: uppercase;
+    color: transparent;
+    -webkit-text-stroke: 0.4px #ffffff;
+    position: relative;
+  }
+
+  .next-prev-heading::before {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: initial;
+    color: white;
+    overflow: hidden;
+    width: 0;
+    transition: 1s;
+  }
+  
+  .next-prev-heading:hover::before {
+    width: 13rem;
+    -webkit-text-stroke: 0px black;
+  }
+  .next-previous-button {
+    font-family: "Glancyr-Medium";
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 37px;
+    color: #ffffff;
+    border: none;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  #previous-heading-id{
+  padding-left: 0.3rem;}
+  .prev-button-icon {
+    color: white;
+    font-size: 22px;
+    position: relative;
+    top: -1.3px;
+  
+  }
+  .next-button-icon {
+    color: white;
+    font-size: 22px;
+    position: relative;
+    top: -1.3px;
+  }
+
+#nextButton{
+  position: relative;
+  left: 8.7rem;
+}
+#prevButton{
+padding-left: 0;
+}
+
+
+  @media screen and (min-width:768px) and (max-width:1220px) {
+    .about-company-features {
+        padding: 8rem 3rem 3rem 3rem;
+    }
+    .services-description {
+        width: 160px;
+        height: 576px; 
+        background: #baff3b;
+    }
+    .services-magical-button{
+        height: 40px;
+    width: 303px;
+    }
+    .type-description{
+        width: 81%;
+    }
+    .services-container{
+        padding-top: 3rem;
+    }
+    .services-heading-1{
+        margin-top: 12rem;
+    }
+    .developement-next-prev-container {
+        gap: 4rem;
+        margin-top: -7.4rem;
+        margin-left: 6rem;
+    }
+    .type-heading {
+        font-size: 38px;
+        margin-left: 14px;
+    }
+    .development-types-container{
+      margin-left: 1rem;
+    }
+
+  }
+  @media screen and (min-width:280px) and (max-width:768px) {
+    .features-types {
+      display: flex;
+      flex-direction: column;
+  }
+  .about-company-features {
+    padding:6rem 1.2rem 5rem 1.2rem;
+    /* background: #364242; */
+}
+.services-container {
+  flex-direction: row-reverse;
+  padding-top: 2rem;
+  justify-content: space-around;
+}
+.services-description {
+  width: 100%;
+  height: 210px;
+}
+.services-heading-1 {
+  font-size: 22px;
+  transform: rotate(0deg);
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  width: 9rem;
+
+}
+.services-spinner{
+  width: 5rem;
+}
+.next-prev-heading{
+  display: none;
+}
+#nextButton{
+  /* position: relative; */
+  left: initial;
+}
+.type-heading{
+  font-size: 21px;
+  padding-top: 2.5rem;
+}
+.type-description{
+  font-size: 14.5px;
+  width: 102%;
+  height: auto;
+  padding-bottom: 2rem;
+}
+.services-magical-button{
+  width: 236px;
+  height: 39px;
+  font-size: 12px;
+}
+.magic-svg {
+  margin-top: -6px;
+  width: 12px;
+}
+.developement-next-prev-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 3rem;
+  margin-top: 2rem;
+  margin-left: 0;
+}
+  }
+  @media screen and (min-width:1441px) {
+    .developement-next-prev-container {
+      gap: 35rem;
+      margin-left: 6rem;
+      justify-content: center;
+  }
+  .features-types {
+    display: flex;
+    justify-content: center;
+}
+.type-description {
+  width: 633.47px;}
+  .services-description {
+    position: relative;
+    left: -11rem;
+}
+  }
+  
